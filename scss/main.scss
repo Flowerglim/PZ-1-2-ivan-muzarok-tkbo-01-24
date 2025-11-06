@@ -1,0 +1,56 @@
+@use "./blocks/header";
+@use "./blocks/sponsors";
+@use "./blocks/agency-service";
+@use "./blocks/our-services";
+@use "./blocks/pricing.scss";
+@use "./blocks/footer";
+
+/* ==========================================================
+   Bootstrap v5.0 Customization — Createx Theme
+   ========================================================== */
+
+/* ---------- Color overrides ---------- */
+:root {
+  --bs-primary: #7772F1;
+  --bs-primary-rgb: 119, 114, 241;
+  --bs-body-font-family: 'Lato', sans-serif;
+  --bs-body-color: #1E212C;
+  --bs-body-bg: #fff;
+}
+
+/* Override Bootstrap utility classes (important for 5.0) */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+.btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  pointer-events: none;
+}
+
+/* ---------- Global Typography ---------- */
+body {
+  font-family: var(--bs-body-font-family);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+

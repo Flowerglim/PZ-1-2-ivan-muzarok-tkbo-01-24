@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Createx SEO Agency</title>
+
+  <!-- Bootstrap 5.0 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom compiled CSS -->
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+<body class="bg-white text-dark" style="font-family: 'Lato', sans-serif">
+
+  <!-- ============= NAVBAR ============= -->
+  <header class="py-3 bg-transparent position-absolute w-100 top-0">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#"><img src="images/logo.png" alt="Createx logo" /></a>
+
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="btn btn-secondary fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item fw-bold" href="">Contacts</a></li>
+            <li><a class="dropdown-item fw-bold" href="">Single Post</a></li>
+            <li><a class="dropdown-item fw-bold" href="">Blog</a></li>
+            <li><a class="dropdown-item fw-bold" href="">Careers</a></li>
+            <li><a class="dropdown-item fw-bold" href="">About Us</a></li>
+            <li><a class="dropdown-item fw-bold" href="">Case Study</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Contacts</a></li>
+      </ul>
+
+      <button type="button" class="btn btn-primary fw-bold px-4 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Talk to a human</button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-primary text-white rounded-3 transition-height">
+            <div class="modal-header">
+              <div class="modal-title fs-5 fw-bold text-white" id="exampleModalLabel">Get a Free SEO Analysis!</div>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <form class="modal-body row g-4 needs-validation" novalidate>
+              <div class="col-md-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" type="text" name="name" class="form-control bg-secondary border-0 text-white" placeholder="Your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control bg-secondary border-0 text-white" placeholder="Your working email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="url" class="form-label">Website URL</label>
+                <input id="url" type="url" name="url" class="form-control bg-secondary border-0 text-white" placeholder="http://yoursite.com" required>
+                <div class="invalid-feedback">Please enter a valid website URL.</div>
+              </div>
+
+              <div class="col-md-3">
+                <button type="submit" class="btn btn-dark fw-bold px-5 my-custom-margin-submit-btn">Analyse your site</button>
+              </div>
+
+              <div id="myAlert1" class="alert alert-success alert-dismissible fade" role="alert">
+                Your application has been approved ! <i class="bi bi-emoji-smile"></i>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============= HERO / MAIN WALLPAPER ============= -->
+  <section
+    class="d-flex flex-column justify-content-center align-items-center text-white text-center"
+    style="background:url('images/background.jpg') center/cover no-repeat; min-height:100vh"
+  >
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 text-lg-start mb-5 mb-lg-0">
+          <h1 class="fw-black display-4 mb-4">
+            Best <span class="text-primary">SEO & Marketing</span><br />
+            Solutions for You
+          </h1>
+
+          <div class="d-flex align-items-center">
+            <button class="btn btn-outline-light fw-bold px-4 py-2 me-4">Get a free analysis</button>
+            <div class="d-flex align-items-center">
+              <div class="rounded-circle bg-primary" style="width:52px;height:52px"><i class="bi bi-play-fill"></i></div>
+              <span class="fw-bold fs-5 ms-3">Play video</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <img src="images/illustration.png" alt="Illustration" class="img-fluid" />
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center align-items-center mt-5 pt-5 fw-bold fs-5 header-links">
+        <span class="d-flex align-items-center me-5">
+          <img src="images/ic-chart.svg" class="me-2" alt="" /> SEO Content Strategy
+        </span>
+        <span class="d-flex align-items-center border-start border-end px-5 me-5">
+          <img src="images/ic-speaker.svg" class="me-2" alt="" /> Content Marketing
+        </span>
+        <span class="d-flex align-items-center">
+          <img src="images/ic-computer.svg" class="me-2" alt="" /> Website & Social Media Marketing
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= CREATEX COMMUNITY ============= -->
+  <section class="createx-community py-5">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-start">
+      <p class="fw-bold fs-3 me-lg-5">
+        Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research. We create science-based SEO strategies to empower our clients.
+      </p>
+
+      <div>
+        <div class="d-flex mb-3">
+          <div class="me-4 d-flex align-items-center">
+            <img src="images/clutch.png" alt="Clutch" class="me-2" style="width: 75px; height: 75px;"/>
+            <p class="small mb-0">Top SEO Companies 2020 by Clutch</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="images/upcity.png" alt="UpCity" class="me-2" style="width: 75px; height: 75px;"/>
+            <p class="small mb-0">Top Digital Marketing Agency 2019 by UpCity</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="me-4 d-flex align-items-center">
+            <img src="images/forbes.png" alt="Forbes" class="me-2" style="height: 75px; width: 75px;"/>
+            <p class="small mb-0">Official Member 2020 by Forbes Agency Council</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="images/topdevelopers.png" alt="Top Developers" class="me-2" style="width: 75px; height: 75px;"/>
+            <p class="small mb-0">Top SEO Companies 2020 by Top Developers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= SPONSORS ============= -->
+  <section class="text-center py-5 sponsors-block">
+    <img src="images/Clients.png" alt="Clients" class="img-fluid" />
+  </section>
+
+  <!-- ============= AGENCY SERVICE ============= -->
+  <section class="agency-service py-5" style="background:url('images/Background.png') center/cover no-repeat">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-start">
+        <div class="col-lg-4 me-5">
+          <h2 class="fw-black display-6 mb-4">Createx Agency</h2>
+          <p class="text-secondary mb-4">
+            Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras at ac magna ultricies orci.
+          </p>
+          <a class="btn btn-primary text-white fw-bold px-4">More about us</a>
+        </div>
+        <div class="col-lg-6 text-center ms-5">
+          <img src="images/коллектив.png" alt="Team" class="img-fluid" />
+        </div>
+      </div>
+
+      <div class="text-center mt-5 statistics">
+        <img src="images/Figures.png" alt="Figures" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= OUR SERVICES ============= -->
+  <section class="our-services py-5 mt-5">
+    <div class="container text-center">
+      <h3 class="fw-black mb-5 display-6">Our services</h3>
+
+      <ul class="nav nav-pills justify-content-center d-flex flex-wrap gap-5 mb-5" id="servicesPills" role="tablist">
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link active" id="social-pill" data-bs-toggle="pill" data-bs-target="#social" type="button" role="tab" aria-controls="social" aria-selected="true">Social Media</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="seo-pill" data-bs-toggle="pill" data-bs-target="#seo" type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="research-pill" data-bs-toggle="pill" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="content-pr-pill" data-bs-toggle="pill" data-bs-target="#content-pr" type="button" role="tab" aria-controls="content-pr" aria-selected="false">Content & PR</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="payed-traffic-pill" data-bs-toggle="pill" data-bs-target="#payed-traffic" type="button" role="tab" aria-controls="payed-traffic" aria-selected="false">Payed Traffic</button></li>
+      </ul>
+
+            <div class="tab-content" id="servicesPillsContent">
+
+              <div class="tab-pane fade show active" id="social" role="tabpanel" aria-labelledby="social-pill">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-5 text-start">
+                    <h4 class="fw-bold mb-4 our-services-title">Complete Workflow For Social Media Management</h4>
+                      <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><span class="text-primary">&check;</span> Aenean enim tellus morbi nisl vulputate dictumst.</li>
+                        <li class="mb-2"><span class="text-primary">&check;</span> Nibh sapien volutpat lacus augue.</li>
+                        <li class="mb-2"><span class="text-primary">&check;</span> Vel in amet, placerat adipiscing est pharetra.</li>
+                        <li class="mb-2"><span class="text-primary">&check;</span> Gravida ornare sit in et ut sit sem id.</li>
+                        <li class="mb-2"><span class="text-primary">&check;</span> Ultrices pellentesque dictum enim egestas ac diam.</li>
+                        <li><span class="text-primary">&check;</span> Sit semper enim senectus integer ut turpis et.</li>
+                      </ul>
+
+                      <div class="d-flex gap-3 mt-4">
+                          <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
+                          <a class="btn btn-primary fw-bold px-3 text-white">Try Social Media toolkit</a>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="images/social-media.jpg" alt="Social media" class="img-fluid rounded shadow-sm service-image" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-pill">
+                <div class="row align-items-center justify-content-center">
+                  
+                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                      <img src="images-interactive/seo-tab-image.jpg" alt="SEO" class="img-fluid rounded shadow-sm service-image" />
+                  </div>
+
+                  <div class="col-md-5 text-start">
+                      <h4 class="fw-bold mb-4 our-services-title">Social Media Marketing</h4>
+                      <p class="text-secondary">Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium. </p>
+
+                      <div class="d-flex gap-3 mt-4">
+                          <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
+                          <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-pill">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-5 text-start">
+                      <h4 class="fw-bold mb-4 our-services-title">Research Service</h4>
+                      <p class="text-secondary">Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.</p>
+
+                      <div class="d-flex gap-3 mt-4">
+                          <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
+                          <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                      <img src="images-interactive/research-tab-image.jpg" alt="Research" class="img-fluid rounded shadow-sm service-image" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="content-pr" role="tabpanel" aria-labelledby="seo-pill">
+                <div class="row align-items-center justify-content-center">
+                  
+                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                      <img src="images-interactive/content-pr-image.jpg" alt="Content&PR" class="img-fluid rounded shadow-sm service-image" />
+                  </div>
+
+                  <div class="col-md-5 text-start">
+                      <h4 class="fw-bold mb-4 our-services-title">Content & PR Service</h4>
+                      <p class="text-secondary">Consequat pharetra elit posuere fringilla luctus sit. Curabitur accumsan fermentum magna amet. Sed nec amet posuere tellus pellentesque vitae. Pulvinar nulla sem risus diam volutpat. Amet, sit aliquet magna in viverra at elit nullam.</p>
+
+                      <div class="d-flex gap-3 mt-4">
+                          <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
+                          <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="payed-traffic" role="tabpanel" aria-labelledby="payed-traffic-pill">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-5 text-start">
+                      <h4 class="fw-bold mb-4 our-services-title">Payed Traffic Management</h4>
+                      <p class="text-secondary">Tortor vitae orci hendrerit lobortis eu. Metus aliquam sem tellus ut fringilla purus nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa scelerisque.</p>
+
+                      <div class="d-flex gap-3 mt-4">
+                          <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
+                          <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                      <img src="images-interactive/payed-traffic-image.jpg" alt="Traffic" class="img-fluid rounded shadow-sm service-image" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+    </div>
+  </section>
+
+  <!-- ============= SEO FORM ============= -->
+  <section id="seo-form" class="seo-form py-5 bg-dark text-white mt-5 mb-5" aria-labelledby="seo-form-title">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5 transition-height">
+
+      <div class="col-lg-5 text-center me-3 d-none d-lg-block">
+        <img src="images/form img.png" alt="Form illustration" class="img-fluid">
+      </div>
+
+      <div class="col-lg-5 ms-lg-5">
+        <h5 id="seo-form-title" class="fw-black display-6 mb-4">Get a Free SEO Analysis!</h5>
+        
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label text-white">Name</label>
+              <input type="text" id="name" name="name" class="form-control bg-secondary border-0 text-white" placeholder="Your name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label text-white">Email</label>
+              <input type="email" id="email" name="email" class="form-control bg-secondary border-0 text-white" placeholder="Your working email" required>
+            </div>
+            <div class="col-12">
+              <label for="website" class="form-label text-white">Your website URL</label>
+              <input type="url" id="website" class="form-control bg-secondary border-0 text-white" placeholder="http://yoursite.com" required>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mt-4">
+            <div class="form-check mb-3 mb-md-0">
+              <input class="form-check-input bg-primary border-0" type="checkbox" id="agree" name="agree" checked disabled>
+              <label class="form-check-label text-white">
+                I agree to receive communications from Createx SEO Agency
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary fw-bold px-4 py-2">Get a free analysis</button>
+          </div>
+
+          <div id="formAlert" class="alert alert-success alert-dismissible fade mt-3" role="alert">
+            Your application has been approved! <i class="bi bi-emoji-smile"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= QUESTIONS (FAQ) ============= -->
+  <section class="questions py-5 mt-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-start justify-content-center gap-5">
+      
+      <div class="accordion accordion-flush" id="accordion-questions">
+        <h6 class="fw-black display-6 mb-4">Frequently Asked Questions</h6>
+
+        <div class="accordion-item mb-3">
+          <div class="accordion-header" id="headingOne">
+            <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Aliquet lectus urna viverra in odio?</button>
+          </div>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-questions">
+            <div class="accordion-body">
+              Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+          <div class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Orci commodo, viverra orci mollis ut euismod?</button>
+          </div>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-questions">
+            <div class="accordion-body">
+              Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+          <div class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Sagittis vitae facilisi rutrum amet mauris quisque vel convallis?</button>
+          </div>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-questions">
+            <div class="accordion-body">
+              Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+          <div class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">In id dolor quis nunc, urna hendrerit pharetra?</button>
+          </div>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion-questions">
+            <div class="accordion-body">
+              Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
+            </div>
+          </div>
+        </div>
+      
+      <a href="#" class="btn btn-primary fw-bold px-4 mt-4">Discover more →</a>
+      </div>
+
+      <div class="col-lg-5 text-center">
+        <img src="images/think about it.png" alt="Thinking" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= CASE STUDIES ============= -->
+  <section class="studies py-5 bg-light mt-4">
+    <div class="container text-center">
+      <div class="d-flex justify-content-center align-items-center mb-4">
+        <h2 class="fw-black display-6 mb-0">Read our clients' case studies</h2>
+        <div class="d-flex ms-auto align-items-center fs-4">
+          <div class="me-3">&larr;</div>
+          <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center" style="width:48px;height:48px;">&rarr;</div>
+        </div>
+      </div>
+
+      <div class="row g-3 justify-content-center mt-5">
+        <div class="col-md-4"><img src="images/card1.png" class="img-fluid rounded" alt=""></div>
+        <div class="col-md-4"><img src="images/card2.png" class="img-fluid rounded" alt=""></div>
+        <div class="col-md-4"><img src="images/card3.png" class="img-fluid rounded" alt=""></div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 pb-3">
+        <span class="fw-bold fs-4">Explore more case studies</span>
+        <a href="#" class="btn btn-primary fw-bold px-4">View all case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= BENEFITS ============= -->
+  <section class="benefits py-5">
+    <div class="container text-center mt">
+      <h2 class="fw-black display-6 mb-5 mt-1">Our benefits</h2>
+      <div class="row justify-content-center align-items-start g-4 mt-4 mb-5">
+        <div class="col-lg-4">
+          <div class="border rounded-3 p-4 h-100">
+            <img src="images/ic-speaker.svg" alt="">
+            <h5 class="fw-bold mt-3">Social Advertising Experts</h5>
+            <p class="text-secondary small">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+          </div>
+          <div class="border rounded-3 p-4 mt-4 h-100">
+            <img src="images/ic-target.svg" alt="">
+            <h5 class="fw-bold mt-3">ROI Focused Campaigns</h5>
+            <p class="text-secondary small">Cursus sit eu viverra suspendisse eu quisque enim est tortor. Mauris ornare convallis nisi diam imperdiet. </p>
+          </div>
+          <div class="border rounded-3 p-4 mt-4 h-100">
+            <img src="images/ic-checklist.svg" alt="">
+            <h5 class="fw-bold mt-3">Monthly Reporting</h5>
+            <p class="text-secondary small">Aenean urna dictum adipiscing nec, cras quisque. Nunc in odio ultricies ornare ornare nunc venenatis mauris. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="images/girle.png" alt="girl" class="img-fluid pt-lg-5">
+        </div>
+
+        <div class="col-lg-4">
+          <div class="border rounded-3 p-4 h-100">
+            <img src="images/ic-chat.svg" alt="">
+            <h5 class="fw-bold mt-3">Quality Customer Service</h5>
+            <p class="text-secondary small">Sed nunc scelerisque ipsum accumsan, proin nunc euismod purus. Dictum tortor, pellentesque vel integer amet. </p>
+          </div>
+          <div class="border rounded-3 p-4 mt-4 h-100">
+            <img src="images/ic-view.svg" alt="">
+            <h5 class="fw-bold mt-3">Complete SEO Transparency</h5>
+            <p class="text-secondary small">Culpa nostrud commodo ea consequat aliquip reprehenderit. Ve niam velit nostrud aliquip sunt.</p>
+          </div>
+          <div class="border rounded-3 p-4 mt-4 h-100">
+            <img src="images/ic-like.svg" alt="">
+            <h5 class="fw-bold mt-3">We're a True Partner</h5>
+            <p class="text-secondary small">Quis sed malesuada tincidunt amet, vitae mi justo elementum eu. Dui gravida id elementum dolor sed elementum, risus. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= PRICING ============= -->
+  <section class="pricing-plans py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-black display-6 mb-5">Flexible pricing plans</h2>
+      <div class="d-inline-flex position-relative mb-5">
+        <div class="btn btn-primary rounded-pill px-4 py-2 me-3">Monthly</div>
+        <div class="btn btn-outline-primary rounded-pill px-4 py-2">Yearly <span class="text-primary">-12% Off</span></div>
+      </div>
+
+      <div class="row g-4 justify-content-center pb-3">
+        <!-- BASIC -->
+        <div class="col-md-4">
+          <div class="border p-4 h-100">
+            <div class="fw-bold card-title-custom">Basic</div>
+            <div class="text-primary fw-black card-price-custom">$24 <span class="fs-6 text-secondary">/mon</span></div>
+            <hr>
+            <ul class="list-unstyled text-start mx-auto card-list-custom" style="max-width:200px;">
+              <li><span class="text-primary">&check;</span> Advanced Analytics</li>
+              <li><span class="text-primary">&check;</span> Change Management</li>
+              <li><span class="text-primary">&check;</span> Corporate Finance</li>
+              <li><span class="text-primary">&check;</span> One Way Link Building</li>
+              <li><span class="text-primary">&check;</span> Social Media Marketing</li>
+              <li class="text-muted">&cross; Strategy & Marketing</li>
+              <li class="text-muted">&cross; Information Technology</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary mt-3">Choose plan</a>
+          </div>
+        </div>
+        <!-- OPTIMAL -->
+        <div class="col-md-4">
+          <div class="border border-success bg-dark text-white p-4 h-100">
+            <div class="fw-bold card-title-custom">Optimal</div>
+            <div class="text-success fw-black card-price-custom">$64 <span class="fs-6 text-light">/mon</span></div>
+            <hr class="border-light">
+            <ul class="list-unstyled text-start mx-auto card-list-custom" style="max-width:200px;">
+              <li><span class="text-success">&check;</span> Advanced Analytics</li>
+              <li><span class="text-success">&check;</span> Change Management</li>
+              <li><span class="text-success">&check;</span> Corporate Finance</li>
+              <li><span class="text-success">&check;</span> One Way Link Building</li>
+              <li><span class="text-success">&check;</span> Social Media Marketing</li>
+              <li><span class="text-success">&check;</span> Strategy & Marketing</li>
+              <li class="text-muted">&cross; Information Technology</li>
+            </ul>
+            <a href="#" class="btn btn-primary text-white mt-3">Choose plan</a>
+          </div>
+        </div>
+        <!-- PREMIUM -->
+        <div class="col-md-4">
+          <div class="border p-4 h-100">
+            <div class="fw-bold card-title-custom">Premium</div>
+            <div class="text-primary fw-black card-price-custom">$98 <span class="fs-6 text-secondary">/mon</span></div>
+            <hr>
+            <ul class="list-unstyled text-start mx-auto card-list-custom" style="max-width:200px;">
+              <li><span class="text-primary">&check;</span> Advanced Analytics</li>
+              <li><span class="text-primary">&check;</span> Change Management</li>
+              <li><span class="text-primary">&check;</span> Corporate Finance</li>
+              <li><span class="text-primary">&check;</span> One Way Link Building</li>
+              <li><span class="text-primary">&check;</span> Social Media Marketing</li>
+              <li><span class="text-primary">&check;</span> Strategy & Marketing</li>
+              <li><span class="text-primary">&check;</span> Information Technology</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary mt-3">Choose plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= COMMENTS ============= -->
+  <section class="comment-section py-5">
+    <div class="container text-center">
+      <h2 class="fw-black display-6 mb-5 mt-5">What our clients say</h2>
+
+      <div id="commentCarousel" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="p-5 bg-light rounded shadow-sm text-start mx-auto" style="max-width: 900px;">
+              <div class="d-flex align-items-start mb-3">
+                <img src="images/braces.png" alt="" class="me-3">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente ratione dicta sit accusantium alias laborum vel blanditiis, dolorem nisi.
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ms-5">
+                <img src="images/dude.png" alt="" class="rounded-circle me-3" style="width: 48px;">
+                <div>
+                    <div class="fw-bold">Courtney Alexander</div>
+                    <div class="text-secondary small">Position, Company name</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="p-5 bg-light rounded shadow-sm text-start mx-auto" style="max-width: 900px;">
+              <div class="d-flex align-items-start mb-3">
+                <img src="images/braces.png" alt="" class="me-3">
+                <p class="mb-0">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores labore quae quaerat facilis omnis odit repudiandae ullam obcaecati hic rerum suscipit impedit debitis tempore possimus iste veniam, incidunt in dolore!
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ms-5">
+                <img src="images-interactive/john.jpg" alt="" class="rounded-circle me-3" style="width: 48px; height: 48px;">
+                <div>
+                    <div class="fw-bold">John Doe</div>
+                    <div class="text-secondary small">CEO, Example Corp</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="p-5 bg-light rounded shadow-sm text-start mx-auto" style="max-width: 900px;">
+              <div class="d-flex align-items-start mb-3">
+                <img src="images/braces.png" alt="" class="me-3">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore distinctio quae adipisci omnis molestiae sunt dolorum magni assumenda. Distinctio tenetur alias deleniti exercitationem, saepe sit similique architecto minus! Illum fuga numquam nisi cum accusantium sint nobis aliquam optio velit quo.
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ms-5">
+                <img src="images-interactive/sarah.jpg" alt="" class="rounded-circle me-3" style="width: 48px; height: 48px;">
+                <div>
+                    <div class="fw-bold">Sarah Johnson</div>
+                    <div class="text-secondary small">Manager, Startup Inc</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#commentCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#commentCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= NEWS ============= -->
+  <section class="news-section py-5 bg-light">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-start gap-5 mt-5 mb-5">
+      <div class="col-lg-3">
+        <h2 class="fw-black display-6">Latest news</h2>
+        <p class="text-secondary my-4">Check more posts in our blog for featured news and advertising insights</p>
+        <a href="#" class="btn btn-primary fw-bold px-4">Go to blog</a>
+      </div>
+      <div class="d-flex flex-wrap gap-4 justify-content-center">
+        <div class="card border-0" style="width:18rem;">
+          <img src="images/pic1.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <div class="d-flex align-items-center text-muted small mb-2">
+              <span>SEO</span>
+              <span class="mx-2 border-start border-end px-2"><img src="images/Clock.png" class="me-1">July 5, 2020</span>
+              <span><img src="images/Profile.png" class="me-1">By Diane Mccoy</span>
+            </div>
+            <h6 class="fw-bold">How to Maximize Your ROI Through Scientific SEM?</h6>
+            <p class="text-secondary small">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio...</p>
+            <a href="#" class="fw-bold text-primary text-decoration-none">Read more →</a>
+          </div>
+        </div>
+
+        <div class="card border-0" style="width:18rem;">
+          <img src="images/pic2.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <div class="d-flex align-items-center text-muted small mb-2">
+              <span>Marketing</span>
+              <span class="mx-2 border-start border-end px-2"><img src="images/Clock.png" class="me-1">July 2, 2020</span>
+              <span><img src="images/Profile.png" class="me-1">By Diane Mccoy</span>
+            </div>
+            <h6 class="fw-bold">The Basics of Blogging Search Engine Optimization.</h6>
+            <p class="text-secondary small">Mauris tincidunt sollicitudin tristique odio eget volutpat. Fringilla viverra amet, mi interdum blandit...</p>
+            <a href="#" class="fw-bold text-primary text-decoration-none">Read more →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-3">
+          <img src="images/logo.png" alt="Logo">
+          <p class="small text-secondary mt-3">Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research. We create science-based SEO strategies to empower our clients.</p>
+          <div class="d-flex gap-3">
+            <img src="images/Facebook.png" alt="">
+            <img src="images/Linked-In.png" alt="">
+            <img src="images/Twitter.png" alt="">
+            <img src="images/Instagram.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center gap-5 mt-4 mt-lg-0">
+          <div>
+            <h6 class="fw-bold">COMPANY</h6>
+            <ul class="list-unstyled small text-secondary">
+              <li>About Us</li><li>Case Studies</li><li>Blog</li><li>Careers</li><li>Contacts</li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="fw-bold">SERVICES</h6>
+            <ul class="list-unstyled small text-secondary">
+              <li>Social Media</li><li>SEO</li><li>Research</li><li>Content & PR</li><li>Payed Traffic</li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="fw-bold">CONTACT US</h6>
+            <ul class="list-unstyled small text-secondary">
+              <li><img src="images/iPhone.png" class="me-2"> (405) 555-0128</li>
+              <li><img src="images/Mail.png" class="me-2"> hello@createx.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="fw-bold mb-3">SIGN UP TO OUR NEWSLETTER</h6>
+          <form class="d-flex bg-secondary rounded overflow-hidden mb-3">
+            <input type="email" class="form-control border-0 bg-secondary text-white" placeholder="Email address">
+            <button class="btn btn-primary px-3" type="submit">
+              <img src="images/Right.png" alt="">
+            </button>
+          </form>
+          <p class="small text-secondary">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+        </div>
+      </div>
+
+      
+
+      <div class="text-center border-top border-secondary pt-3 small text-secondary">
+
+      <div class="footer-row2">
+        <div class="footer-row2-links">
+          <a href=""><img src="images/footer-clutch.png" alt="Clutch"></a>
+          <a href=""><img src="images/footer-good.png" alt="Good"></a>
+          <a href=""><img src="images/footer-partber.png" alt="Partner"></a>
+          <a href=""><img src="images/footer-hubspot.png" alt="Hubspot"></a>
+        </div>
+
+        <div class="footer-row2-btn">
+          <span class="footer-row2-btn-description text-secondary small">GO TO TOP</span>
+          <div class="footer-row2-btn-btn" id="goTopBtn">&#8743;</div>
+        </div>
+        </div class="justify-content-start">
+          © All rights reserved. Made with <img src="images/Heart.png" alt=""> by Createx Studio
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

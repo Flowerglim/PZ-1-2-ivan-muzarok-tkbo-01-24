@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.bi-play-fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.header-links {
+  margin-top: 124px !important;
+}
+
+.display-4 {
+  font-weight: 900 !important;
+}
+
+.dropdown-menu {
+  border: none !important;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-secondary:focus .btn-secondary {
+  color: transparent !important;
+}
+
+/* Убираем тень у всех input */
+input {
+  box-shadow: none !important;
+}
+
+/* Убираем тень и outline при фокусе */
+input:focus,
+button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Убираем обводку у кнопок Bootstrap */
+.btn:focus,
+.btn:active,
+.btn:focus:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.my-custom-margin-submit-btn {
+  margin-top: 33px;
+}
+
+.dropdown-item:active {
+  background-color: #7772F1;
+  color: #fff;
+}
+
+.transition-height {
+  transition: height 0.4s ease, max-height 0.4s ease, padding 0.4s ease;
+}
+
+#myAlert1 {
+  display: none;
+}
+
+.sponsors-block {
+  margin: 84px 0;
+}
+
+.display-6 {
+  font-weight: 900 !important;
+}
+
+.statistics {
+  margin-top: 180px !important;
+}
+
+.our-services-title {
+  font-weight: 700 !important;
+  font-size: 28px;
+}
+
+.nav-link {
+  color: #9A9CA5;
+}
+
+.nav-link:hover {
+  color: #7772F1 !important;
+}
+
+.nav-pills .active {
+  background-color: transparent !important;
+  color: #7772F1 !important;
+  border: 1px solid #7772F1 !important;
+  cursor: default;
+}
+
+.form-control::-moz-placeholder {
+  color: rgba(225, 255, 255, 0.7);
+}
+
+.form-control::placeholder {
+  color: rgba(225, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.accordion-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.accordion-button {
+  box-shadow: none;
+  position: relative;
+  min-height: 70px;
+  padding-right: 3rem;
+  width: 708px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  content: "+";
+  color: #7772F1;
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 1ch;
+  transform: none !important;
+  background-image: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #7772F1;
+  opacity: 80%;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  color: white;
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  height: 100px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+
+.card-title-custom {
+  font-weight: 700 !important;
+  font-size: 28px !important;
+}
+
+.card-price-custom {
+  font-weight: 900 !important;
+  font-size: 46px !important;
+}
+
+.card-price-custom > span {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  vertical-align: super !important;
+}
+
+.card-list-custom > li {
+  margin-bottom: 8px;
+}
+
+.footer-row2 {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.footer-row2-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-row2-links img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-row2-links img:hover {
+  transform: scale(1.05);
+}
+
+.footer-row2-btn {
+  margin-left: 550px;
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}
+
+.footer-row2-btn-description {
+  color: #bdbdbd;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.footer-row2-btn-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: #7772F1;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* ==========================================================
+   Bootstrap v5.0 Customization — Createx Theme
+   ========================================================== */
+/* ---------- Color overrides ---------- */
+:root {
+  --bs-primary: #7772F1;
+  --bs-primary-rgb: 119, 114, 241;
+  --bs-body-font-family: "Lato", sans-serif;
+  --bs-body-color: #1E212C;
+  --bs-body-bg: #fff;
+}
+
+/* Override Bootstrap utility classes (important for 5.0) */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  pointer-events: none;
+}
+
+/* ---------- Global Typography ---------- */
+body {
+  font-family: var(--bs-body-font-family);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */

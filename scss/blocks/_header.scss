@@ -1,0 +1,65 @@
+.bi-play-fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.header-links{
+    margin-top: 124px !important;
+}
+
+.display-4{
+    font-weight: 900 !important;
+}
+
+.dropdown-menu{
+    border: none !important;
+}
+
+.btn-secondary{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.btn-secondary:focus .btn-secondary{
+    color: transparent !important;
+}
+
+/* Убираем тень у всех input */
+input {
+  box-shadow: none !important;
+}
+
+/* Убираем тень и outline при фокусе */
+input:focus, 
+button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Убираем обводку у кнопок Bootstrap */
+.btn:focus,
+.btn:active,
+.btn:focus:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.my-custom-margin-submit-btn{
+    margin-top: 33px;
+}
+
+.dropdown-item:active {
+  background-color:#7772F1;
+  color: #fff;
+}
+
+.transition-height{
+  transition: height 0.4s ease, max-height 0.4s ease, padding 0.4s ease;
+}
+
+#myAlert1 {
+  display: none;
+}
