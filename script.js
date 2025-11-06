@@ -10,20 +10,17 @@
 //       event.stopPropagation();
 
 //       if (form.checkValidity()) {
-//         // Показываем alert
 //         alert.style.display = 'block';
 //         alert.classList.add('show');
 
-//         // Добавляем класс, чтобы модалка “расширилась”
 //         modalContent.style.paddingBottom = '2rem';
 
-//         // Автоматическое скрытие через 3 секунды
 //         setTimeout(() => {
 //           alert.classList.remove('show');
 //           setTimeout(() => {
 //             alert.style.display = 'none';
 //             modalContent.style.paddingBottom = '';
-//           }, 300); // ждем завершения fade-анимации
+//           }, 300); 
 //         }, 3000);
 //       }
 
@@ -36,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('.needs-validation');
 
   forms.forEach(form => {
-    const alert = form.querySelector('.alert'); // ищем alert внутри формы
+    const alert = form.querySelector('.alert'); 
 
     form.addEventListener('submit', event => {
       event.preventDefault();
@@ -47,13 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
           alert.style.display = 'block';
           alert.classList.add('show');
 
-          // Если форма в модалке — ищем modal-content для отступа
           const modalContent = form.closest('.modal-content');
           if (modalContent) {
             modalContent.style.paddingBottom = '2rem';
           }
 
-          // Автоматическое скрытие через 3 секунды
           setTimeout(() => {
             alert.classList.remove('show');
             setTimeout(() => {
@@ -65,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 3000);
         }
 
-        // Очистить поля (если нужно)
         // form.reset();
         // form.classList.remove('was-validated');
       }
@@ -74,3 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
