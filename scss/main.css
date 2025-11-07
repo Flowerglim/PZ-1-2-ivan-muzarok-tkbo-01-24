@@ -7,6 +7,10 @@
   margin-top: 5px;
 }
 
+header {
+  z-index: 1050;
+}
+
 .header-links {
   margin-top: 124px !important;
 }
@@ -28,19 +32,16 @@
   color: transparent !important;
 }
 
-/* Убираем тень у всех input */
 input {
   box-shadow: none !important;
 }
 
-/* Убираем тень и outline при фокусе */
 input:focus,
 button:focus {
   box-shadow: none !important;
   outline: none !important;
 }
 
-/* Убираем обводку у кнопок Bootstrap */
 .btn:focus,
 .btn:active,
 .btn:focus:active {
@@ -63,6 +64,23 @@ button:focus {
 
 #myAlert1 {
   display: none;
+}
+
+nav {
+  background-color: transparent;
+}
+
+.dropdown-toggle:hover {
+  color: #7772F1;
+}
+
+.navbar-collapse.show {
+  background-color: rgba(44, 43, 43, 0.85);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: background 0.2s ease;
 }
 
 .sponsors-block {
@@ -184,9 +202,9 @@ button:focus {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 56px;
+  gap: 1rem;
 }
 
 .footer-row2-links {
@@ -222,11 +240,17 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   background-color: #7772F1;
   border-radius: 4px;
   color: #fff;
   font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.footer-row2-btn-btn:hover {
+  background-color: #5b57e0;
 }
 
 /* ==========================================================

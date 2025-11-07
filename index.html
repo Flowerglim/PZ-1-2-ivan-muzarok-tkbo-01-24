@@ -25,75 +25,102 @@
 
   <!-- ============= NAVBAR ============= -->
   <header class="py-3 bg-transparent position-absolute w-100 top-0">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="#"><img src="images/logo.png" alt="Createx logo" /></a>
 
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="btn btn-secondary fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <!-- LOGO (слева) -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Createx logo" height="40">
+      </a>
+
+      <!-- TOGGLER (для мобильных) -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- НАВИГАЦИЯ (по центру) -->
+      <div class="collapse navbar-collapse justify-content-center custom-menu" id="navbarNavDropdown">
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item dropdown me-lg-3">
+            <a class="btn btn-secondary fw-bold dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
-          </a>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fw-bold" href="#">Contacts</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Single Post</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Blog</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Careers</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">About Us</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Case Study</a></li>
+            </ul>
+          </li>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item fw-bold" href="">Contacts</a></li>
-            <li><a class="dropdown-item fw-bold" href="">Single Post</a></li>
-            <li><a class="dropdown-item fw-bold" href="">Blog</a></li>
-            <li><a class="dropdown-item fw-bold" href="">Careers</a></li>
-            <li><a class="dropdown-item fw-bold" href="">About Us</a></li>
-            <li><a class="dropdown-item fw-bold" href="">Case Study</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Case Studies</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">About Us</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Contacts</a></li>
-      </ul>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Contacts</a></li>
+          <li class="nav-item d-lg-none mt-3 text-center">
+            <button type="button" class="btn btn-primary fw-bold px-4 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Talk to a human
+            </button>
+          </li>
+        </ul>
+      </div>
 
-      <button type="button" class="btn btn-primary fw-bold px-4 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Talk to a human</button>
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content bg-primary text-white rounded-3 transition-height">
-            <div class="modal-header">
-              <div class="modal-title fs-5 fw-bold text-white" id="exampleModalLabel">Get a Free SEO Analysis!</div>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-
-            <form class="modal-body row g-4 needs-validation" novalidate>
-              <div class="col-md-3">
-                <label for="name" class="form-label">Name</label>
-                <input id="name" type="text" name="name" class="form-control bg-secondary border-0 text-white" placeholder="Your name" required>
-                <div class="invalid-feedback">Please enter your name.</div>
-              </div>
-
-              <div class="col-md-3">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" type="email" name="email" class="form-control bg-secondary border-0 text-white" placeholder="Your working email" required>
-                <div class="invalid-feedback">Please enter a valid email address.</div>
-              </div>
-
-              <div class="col-md-3">
-                <label for="url" class="form-label">Website URL</label>
-                <input id="url" type="url" name="url" class="form-control bg-secondary border-0 text-white" placeholder="http://yoursite.com" required>
-                <div class="invalid-feedback">Please enter a valid website URL.</div>
-              </div>
-
-              <div class="col-md-3">
-                <button type="submit" class="btn btn-dark fw-bold px-5 my-custom-margin-submit-btn">Analyse your site</button>
-              </div>
-
-              <div id="myAlert1" class="alert alert-success alert-dismissible fade" role="alert">
-                Your application has been approved ! <i class="bi bi-emoji-smile"></i>
-              </div>
-            </form>
-
-          </div>
-        </div>
+      <!-- CTA BUTTON (справа) -->
+      <div class="d-none d-lg-block">
+        <button type="button" class="btn btn-primary fw-bold px-4 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Talk to a human
+        </button>
       </div>
 
     </div>
-  </header>
+  </nav>
+</header>
+
+
+<!-- MODAL -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content bg-primary text-white rounded-3">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold text-white" id="exampleModalLabel">Get a Free SEO Analysis!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <form class="modal-body row g-4 needs-validation" novalidate>
+        <div class="col-md-3">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" type="text" name="name" class="form-control bg-secondary border-0 text-white" placeholder="Your name" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" name="email" class="form-control bg-secondary border-0 text-white" placeholder="Your working email" required>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="url" class="form-label">Website URL</label>
+          <input id="url" type="url" name="url" class="form-control bg-secondary border-0 text-white" placeholder="http://yoursite.com" required>
+          <div class="invalid-feedback">Please enter a valid website URL.</div>
+        </div>
+
+        <div class="col-md-3 d-flex align-items-end">
+          <button type="submit" class="btn btn-dark fw-bold w-100">Analyse your site</button>
+        </div>
+
+        <div id="myAlert1" class="alert alert-success alert-dismissible fade mt-3" role="alert">
+          Your application has been approved! <i class="bi bi-emoji-smile"></i>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 
   <!-- ============= HERO / MAIN WALLPAPER ============= -->
   <section
@@ -176,15 +203,15 @@
   <!-- ============= AGENCY SERVICE ============= -->
   <section class="agency-service py-5" style="background:url('images/Background.png') center/cover no-repeat">
     <div class="container">
-      <div class="row align-items-center justify-content-center text-start">
-        <div class="col-lg-4 me-5">
-          <h2 class="fw-black display-6 mb-4">Createx Agency</h2>
+      <div class="row align-items-center justify-content-center text-start text-lg-start">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h2 class="fw-bold display-6 mb-4">Createx Agency</h2>
           <p class="text-secondary mb-4">
             Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras at ac magna ultricies orci.
           </p>
           <a class="btn btn-primary text-white fw-bold px-4">More about us</a>
         </div>
-        <div class="col-lg-6 text-center ms-5">
+        <div class="col-lg-6 text-center">
           <img src="images/коллектив.png" alt="Team" class="img-fluid" />
         </div>
       </div>
@@ -198,21 +225,21 @@
   <!-- ============= OUR SERVICES ============= -->
   <section class="our-services py-5 mt-5">
     <div class="container text-center">
-      <h3 class="fw-black mb-5 display-6">Our services</h3>
+      <h3 class="fw-bolder mb-5 display-6">Our services</h3>
 
       <ul class="nav nav-pills justify-content-center d-flex flex-wrap gap-5 mb-5" id="servicesPills" role="tablist">
-        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link active" id="social-pill" data-bs-toggle="pill" data-bs-target="#social" type="button" role="tab" aria-controls="social" aria-selected="true">Social Media</button></li>
-        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="seo-pill" data-bs-toggle="pill" data-bs-target="#seo" type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button></li>
-        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="research-pill" data-bs-toggle="pill" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button></li>
-        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="content-pr-pill" data-bs-toggle="pill" data-bs-target="#content-pr" type="button" role="tab" aria-controls="content-pr" aria-selected="false">Content & PR</button></li>
-        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link" id="payed-traffic-pill" data-bs-toggle="pill" data-bs-target="#payed-traffic" type="button" role="tab" aria-controls="payed-traffic" aria-selected="false">Payed Traffic</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link active px-4 py-2" id="social-pill" data-bs-toggle="pill" data-bs-target="#social" type="button" role="tab" aria-controls="social" aria-selected="true">Social Media</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link px-4 py-2" id="seo-pill" data-bs-toggle="pill" data-bs-target="#seo" type="button" role="tab" aria-controls="seo" aria-selected="false">SEO</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link px-4 py-2" id="research-pill" data-bs-toggle="pill" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link px-4 py-2" id="content-pr-pill" data-bs-toggle="pill" data-bs-target="#content-pr" type="button" role="tab" aria-controls="content-pr" aria-selected="false">Content & PR</button></li>
+        <li class="px-4 py-2 nav-item" role="presentation"><button class="nav-link px-4 py-2" id="payed-traffic-pill" data-bs-toggle="pill" data-bs-target="#payed-traffic" type="button" role="tab" aria-controls="payed-traffic" aria-selected="false">Payed Traffic</button></li>
       </ul>
 
             <div class="tab-content" id="servicesPillsContent">
 
               <div class="tab-pane fade show active" id="social" role="tabpanel" aria-labelledby="social-pill">
                 <div class="row align-items-center justify-content-center">
-                  <div class="col-md-5 text-start">
+                  <div class="col-md-5 text-start mb-4 mb-md-0">
                     <h4 class="fw-bold mb-4 our-services-title">Complete Workflow For Social Media Management</h4>
                       <ul class="list-unstyled text-secondary">
                         <li class="mb-2"><span class="text-primary">&check;</span> Aenean enim tellus morbi nisl vulputate dictumst.</li>
@@ -223,13 +250,13 @@
                         <li><span class="text-primary">&check;</span> Sit semper enim senectus integer ut turpis et.</li>
                       </ul>
 
-                      <div class="d-flex gap-3 mt-4">
+                      <div class="d-flex flex-wrap gap-3 mt-4">
                           <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
                           <a class="btn btn-primary fw-bold px-3 text-white">Try Social Media toolkit</a>
                       </div>
                   </div>
 
-                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                  <div class="col-md-6 text-center">
                     <img src="images/social-media.jpg" alt="Social media" class="img-fluid rounded shadow-sm service-image" />
                   </div>
                 </div>
@@ -238,7 +265,7 @@
               <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-pill">
                 <div class="row align-items-center justify-content-center">
                   
-                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                  <div class="col-md-6 text-center mb-4 mb-md-0">
                       <img src="images-interactive/seo-tab-image.jpg" alt="SEO" class="img-fluid rounded shadow-sm service-image" />
                   </div>
 
@@ -246,7 +273,7 @@
                       <h4 class="fw-bold mb-4 our-services-title">Social Media Marketing</h4>
                       <p class="text-secondary">Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium. </p>
 
-                      <div class="d-flex gap-3 mt-4">
+                      <div class="d-flex flex-wrap gap-3 mt-4">
                           <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
                           <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
                       </div>
@@ -256,17 +283,17 @@
 
               <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-pill">
                 <div class="row align-items-center justify-content-center">
-                  <div class="col-md-5 text-start">
+                  <div class="col-md-5 text-start mb-4 mb-md-0">
                       <h4 class="fw-bold mb-4 our-services-title">Research Service</h4>
                       <p class="text-secondary">Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.</p>
 
-                      <div class="d-flex gap-3 mt-4">
+                      <div class="d-flex flex-wrap gap-3 mt-4">
                           <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
                           <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
                       </div>
                   </div>
 
-                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                  <div class="col-md-6 text-center">
                       <img src="images-interactive/research-tab-image.jpg" alt="Research" class="img-fluid rounded shadow-sm service-image" />
                   </div>
                 </div>
@@ -283,7 +310,7 @@
                       <h4 class="fw-bold mb-4 our-services-title">Content & PR Service</h4>
                       <p class="text-secondary">Consequat pharetra elit posuere fringilla luctus sit. Curabitur accumsan fermentum magna amet. Sed nec amet posuere tellus pellentesque vitae. Pulvinar nulla sem risus diam volutpat. Amet, sit aliquet magna in viverra at elit nullam.</p>
 
-                      <div class="d-flex gap-3 mt-4">
+                      <div class="d-flex flex-wrap gap-3 mt-4">
                           <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
                           <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
                       </div>
@@ -293,17 +320,17 @@
 
               <div class="tab-pane fade" id="payed-traffic" role="tabpanel" aria-labelledby="payed-traffic-pill">
                 <div class="row align-items-center justify-content-center">
-                  <div class="col-md-5 text-start">
+                  <div class="col-md-5 text-start mb-4 mb-md-0">
                       <h4 class="fw-bold mb-4 our-services-title">Payed Traffic Management</h4>
                       <p class="text-secondary">Tortor vitae orci hendrerit lobortis eu. Metus aliquam sem tellus ut fringilla purus nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa scelerisque.</p>
 
-                      <div class="d-flex gap-3 mt-4">
+                      <div class="d-flex flex-wrap gap-3 mt-4">
                           <a class="btn btn-outline-primary fw-bold px-3">Learn more</a>
                           <a class="btn btn-primary fw-bold px-3 text-white">Try SEO toolkit</a>
                       </div>
                   </div>
 
-                  <div class="col-md-6 text-center mt-4 mt-md-0">
+                  <div class="col-md-6 text-center">
                       <img src="images-interactive/payed-traffic-image.jpg" alt="Traffic" class="img-fluid rounded shadow-sm service-image" />
                   </div>
                 </div>
@@ -684,18 +711,19 @@
   <!-- ============= FOOTER ============= -->
   <footer class="bg-dark text-white py-5">
     <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-3">
-          <img src="images/logo.png" alt="Logo">
-          <p class="small text-secondary mt-3">Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research. We create science-based SEO strategies to empower our clients.</p>
-          <div class="d-flex gap-3">
+      <div class="row mb-5">
+        <div class="col-lg-3 mb-4 mb-lg-0">
+          <img src="images/logo.png" alt="Logo" class="mb-3">
+          <p class="small text-secondary">Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research. We create science-based SEO strategies to empower our clients.</p>
+          <div class="d-flex gap-3 mt-3">
             <img src="images/Facebook.png" alt="">
             <img src="images/Linked-In.png" alt="">
             <img src="images/Twitter.png" alt="">
             <img src="images/Instagram.png" alt="">
           </div>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center gap-5 mt-4 mt-lg-0">
+
+        <div class="col-lg-6 d-flex flex-wrap justify-content-center gap-5">
           <div>
             <h6 class="fw-bold">COMPANY</h6>
             <ul class="list-unstyled small text-secondary">
@@ -716,7 +744,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 mt-4 mt-lg-0">
           <h6 class="fw-bold mb-3">SIGN UP TO OUR NEWSLETTER</h6>
           <form class="d-flex bg-secondary rounded overflow-hidden mb-3">
             <input type="email" class="form-control border-0 bg-secondary text-white" placeholder="Email address">
@@ -730,22 +758,22 @@
 
       
 
-      <div class="text-center border-top border-secondary pt-3 small text-secondary">
+      <div class="border-top border-secondary pt-4 small text-secondary">
 
-      <div class="footer-row2">
-        <div class="footer-row2-links">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 footer-row2">
+        <div class="footer-row2-links d-flex flex-wrap gap-3">
           <a href=""><img src="images/footer-clutch.png" alt="Clutch"></a>
           <a href=""><img src="images/footer-good.png" alt="Good"></a>
           <a href=""><img src="images/footer-partber.png" alt="Partner"></a>
           <a href=""><img src="images/footer-hubspot.png" alt="Hubspot"></a>
         </div>
 
-        <div class="footer-row2-btn">
+        <div class="d-flex align-items-center gap-3 footer-row2-btn">
           <span class="footer-row2-btn-description text-secondary small">GO TO TOP</span>
-          <div class="footer-row2-btn-btn" id="goTopBtn">&#8743;</div>
+          <button class="footer-row2-btn-btn border-0" id="goTopBtn">&#8743;</button>
         </div>
-        </div class="justify-content-start">
-          © All rights reserved. Made with <img src="images/Heart.png" alt=""> by Createx Studio
+        <div class="text-center mt-4">
+          © All rights reserved. Made with <img src="images/Heart.png" alt="" class="mx-1"> by Createx Studio
         </div>
       </div>
     </div>

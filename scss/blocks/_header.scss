@@ -6,6 +6,10 @@
     margin-top: 5px;
 }
 
+header{
+  z-index: 1050;
+}
+
 .header-links{
     margin-top: 124px !important;
 }
@@ -27,19 +31,16 @@
     color: transparent !important;
 }
 
-/* Убираем тень у всех input */
 input {
   box-shadow: none !important;
 }
 
-/* Убираем тень и outline при фокусе */
 input:focus, 
 button:focus {
   box-shadow: none !important;
   outline: none !important;
 }
 
-/* Убираем обводку у кнопок Bootstrap */
 .btn:focus,
 .btn:active,
 .btn:focus:active {
@@ -62,4 +63,20 @@ button:focus {
 
 #myAlert1 {
   display: none;
+}
+
+nav{
+  background-color: transparent;
+}
+
+.dropdown-toggle:hover{
+  color: #7772F1;
+}
+
+.navbar-collapse.show {
+  background-color: rgba(44, 43, 43, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: background 0.2s ease;
 }
